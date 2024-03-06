@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <div className="flex flex-col md:flex-row gap-1">
-      <header>
+      <header className="py-1 px-2 text-gray-800 bg-amber-400">
         head
       </header>
       <main>
