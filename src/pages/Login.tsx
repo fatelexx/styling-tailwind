@@ -1,6 +1,10 @@
+import { useState } from "react"
+
 export default function Login() {
+    const [swap, setSwap] = useState(false);
+
     return (
-        <section className="bg-gray-50 dark:bg-gray-900">
+        !swap ? <section className="bg-gray-50 dark:bg-gray-900">
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 animate-in fade-in zoom-in">
                 <a
                     href="#"
@@ -80,6 +84,7 @@ export default function Login() {
                             </div>
                             <button
                                 type="submit"
+                                onClick={() => setSwap(!swap)}
                                 className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                             >
                                 Sign in
@@ -98,6 +103,36 @@ export default function Login() {
                 </div>
             </div>
         </section>
-
+        : <Dashboard />
     )
+}
+
+export function Dashboard() {
+    return (
+        <div className="flex h-full flex-col px-3 py-4 md:px-2">
+          <a
+            className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
+            href="/"
+          >
+            <div className="w-32 text-white md:w-40">
+              {/* <AcmeLogo /> */}
+            </div>
+          </a>
+          <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
+            {/* <NavLinks /> */}
+            <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
+            <form
+                    //   action={async () => {
+                    //     'use server';
+                    //     await signOut();
+                    //   }}
+                    >
+              <button className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3">
+                {/* <PowerIcon className="w-6" /> */}
+                <div className="hidden md:block">Sign Out</div>
+              </button>
+            </form>
+          </div>
+        </div>
+      );
 }
