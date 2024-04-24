@@ -109,7 +109,7 @@ export default function Login() {
 
 export function Playground() {
     return (
-        <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-100 py-6 sm:py-12">
+        <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
         <img
           src="/img/beams.jpg"
           alt=""
