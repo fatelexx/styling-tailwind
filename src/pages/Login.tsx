@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Admin } from "./Admin";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -103,7 +104,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <Playground />
+        : <Admin />
     )
 }
 
