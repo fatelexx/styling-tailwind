@@ -5,7 +5,7 @@ import { Badge } from "../components/Badge";
 import { Alert } from "../components/Alert";
 import { Card } from "../components/Card";
 import { Footer } from "../components/Footer";
-import { Stepper } from "../components/Stepper";
+import { ButtonGroup } from "../components/ButtonGroup";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -110,7 +110,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <Stepper />
+        : <ButtonGroup />
     )
 }
 
