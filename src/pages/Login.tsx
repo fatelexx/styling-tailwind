@@ -7,6 +7,7 @@ import { Card } from "../components/Card";
 import { Footer } from "../components/Footer";
 import { ButtonGroup } from "../components/ButtonGroup";
 import {Gallery} from "../components/Gallery";
+import { MobileMockup } from "../components/MobileMockup";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -111,7 +112,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <Gallery />
+        : <MobileMockup />
     )
 }
 
