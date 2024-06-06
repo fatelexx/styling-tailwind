@@ -8,6 +8,7 @@ import { Footer } from "../components/Footer";
 import { ButtonGroup } from "../components/ButtonGroup";
 import {Gallery} from "../components/Gallery";
 import { MobileMockup } from "../components/MobileMockup";
+import { TabletMockup } from "../components/TabletMockup";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -112,7 +113,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <MobileMockup />
+        : <TabletMockup />
     )
 }
 
