@@ -10,6 +10,7 @@ import {Gallery} from "../components/Gallery";
 import { MobileMockup } from "../components/MobileMockup";
 import { TabletMockup } from "../components/TabletMockup";
 import { LaptopMockup } from "../components/LaptopMockup";
+import DesktopMockup from "../components/DesktopMockup";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -114,7 +115,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <LaptopMockup />
+        : <DesktopMockup />
     )
 }
 
