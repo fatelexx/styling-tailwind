@@ -12,6 +12,7 @@ import { TabletMockup } from "../components/TabletMockup";
 import { LaptopMockup } from "../components/LaptopMockup";
 import DesktopMockup from "../components/DesktopMockup";
 import SmartwatchMockup from "../components/SmartwatchMockup";
+import BottomNavigation from "../components/BottomNavigation";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -116,7 +117,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <SmartwatchMockup />
+        : <BottomNavigation />
     )
 }
 
