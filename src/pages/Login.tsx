@@ -16,6 +16,7 @@ import BottomNavigation from "../components/BottomNavigation";
 import Indicator from "../components/Indicator";
 import Kbd from "../components/Kbd";
 import ListGroup from "../components/ListGroup";
+import Pagination from "../components/Pagination";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -120,7 +121,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <ListGroup />
+        : <Pagination />
     )
 }
 
