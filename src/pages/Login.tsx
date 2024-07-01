@@ -19,6 +19,7 @@ import ListGroup from "../components/ListGroup";
 import Pagination from "../components/Pagination";
 import Rating from "../components/Rating";
 import Sidebar from "../components/Sidebar";
+import Skeleton from "../components/Skeleton";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -123,7 +124,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <Sidebar />
+        : <Skeleton />
     )
 }
 
