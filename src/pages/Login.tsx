@@ -22,6 +22,7 @@ import Sidebar from "../components/Sidebar";
 import Skeleton from "../components/Skeleton";
 import Spinner from "../components/Spinner";
 import Table from "../components/Table";
+import Tabs from "../components/Tabs";
 
 export default function Login() {
     const [swap, setSwap] = useState(false);
@@ -126,7 +127,7 @@ export default function Login() {
                 </div>
             </div>
         </section>
-        : <Table />
+        : <Tabs />
     )
 }
 
