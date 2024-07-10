@@ -1,29 +1,4 @@
-import { useState } from "react"
-import { Admin } from "./Admin";
-import {Avatar} from '../components/Avatar';
-import { Badge } from "../components/Badge";
-import { Alert } from "../components/Alert";
-import { Card } from "../components/Card";
-import { Footer } from "../components/Footer";
-import { ButtonGroup } from "../components/ButtonGroup";
-import {Gallery} from "../components/Gallery";
-import { MobileMockup } from "../components/MobileMockup";
-import { TabletMockup } from "../components/TabletMockup";
-import { LaptopMockup } from "../components/LaptopMockup";
-import DesktopMockup from "../components/DesktopMockup";
-import SmartwatchMockup from "../components/SmartwatchMockup";
-import BottomNavigation from "../components/BottomNavigation";
-import Indicator from "../components/Indicator";
-import Kbd from "../components/Kbd";
-import ListGroup from "../components/ListGroup";
-import Pagination from "../components/Pagination";
-import Rating from "../components/Rating";
-import Sidebar from "../components/Sidebar";
-import Skeleton from "../components/Skeleton";
-import Spinner from "../components/Spinner";
-import Table from "../components/Table";
-import Tabs from "../components/Tabs";
-import Timeline from "../components/Timeline";
+import { useState } from "react";
 import Video from "../components/Video";
 
 export default function Login() {
