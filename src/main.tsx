@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import Login from './pages/Login';
+import { Component } from './Component';
+import { Flowbite } from 'flowbite-react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,6 +21,8 @@ root.render(
     <footer>
       foot
     </footer> */}
-    <Login />
+    <Flowbite>
+      <Component />
+    </Flowbite>
   </StrictMode>
 );
